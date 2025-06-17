@@ -9,6 +9,8 @@ services:
       MYSQL_USER: product_user
       MYSQL_PASSWORD: product_user_password
       MYSQL_DATABASE: product
+    volumes:
+      - mysql_data:/var/lib/mysql
 
   spring-boot-app:
       build:
@@ -29,3 +31,7 @@ services:
         dockerfile: Dockerfile
       ports:
         - "3000:80"
+
+
+volumes:
+  mysql_data:
