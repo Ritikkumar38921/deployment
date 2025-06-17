@@ -1,2 +1,1 @@
-### React Product App using Spring Boot as the backend
-![alt text](react-product-app.png)
+just run docker-compose -f docker-compose.yml up -d
